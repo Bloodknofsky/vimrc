@@ -31,11 +31,3 @@ autocmd filetype java nnoremap <F5> :w <bar> !javac % && java -enableassertions 
 autocmd filetype python nnoremap <F5> :w <bar> !python % <CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && time ./'.shellescape('%:r')<CR>
-
-
-
-
-
-terminal command:   i) sudo apt install python3-dev
-                    ii) cd ./vim/bundle/YouCompleteMe
-                    iii) ./install.py --clang-completer
